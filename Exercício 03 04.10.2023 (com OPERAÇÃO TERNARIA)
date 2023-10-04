@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <string.h> 
+
+int main () {
+
+setlocale(LC_ALL, "portuguese");
+
+int idade;
+char resultado [200];
+
+printf(" Digite a sua idade: ");
+scanf("%d",&idade);
+
+
+/*
+if (idade >= 18 && idade <= 65 ) {
+    printf("VOCÊ É OBRIGADO A VOTAR!");
+} else 
+{ printf("VOCE NÃO É OBRIGADO A VOTAR");
+    
+}
+*/
+
+// String Copy
+
+idade >= 18 && idade <= 65 ?
+ strcpy(resultado, "Obrigado a votar!"):
+ strcpy(resultado, "Não é obrigado a votar!");
+
+printf(resultado);
+
+return 0;
+}
